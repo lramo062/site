@@ -9,9 +9,9 @@
 
 (defonce app-state (atom {}))
 
-(def desc1 "Currently a Computer Science Major/Mathematical Science Minor at FIU. I also do some NodeJS Development for CruiseThinkLabs and manage a small group of programmers who work on web/mobile freelance projects. I will be interning at Target in Minneapolis this summer as a Software Engineer.")
+(def desc1 "Currently a Computer Science Major/Mathematical Science Minor at FIU. As of today, I develop software for CruiseThinkLabs primarily working with NodeJS. I will be interning at Target in Minneapolis this summer as a Software Engineer.")
 
-(def desc2 "I love writting software in Java, Clojure, C, JS, and F#. I'm also very passionate about my Emacs/Linux Development Enviorment and during my free time I play basketball, workout, or participate in Hackathons across Florida!")
+(def desc2 " I love writting software in Java, Clojure, C, JS, and F#. I'm also very passionate about my Emacs/Linux Development Enviorment. During my free time I play basketball, workout, or participate in Hackathons all around Florida!")
 
 
 
@@ -30,13 +30,16 @@
        [:li {:display "inline"} [:img {:class "img-responsive" :width "100px" :height "60px" :src "img/lisp_logo.png"}]]
        [:li {:display "inline"} [:img {:class "img-responsive" :width "100px" :height "60px" :src "img/fsharp.png"}]]
        [:li {:display "inline"} [:img {:class "img-responsive" :width "100px" :height "60px" :src "img/c.png"}]]]
+      [:ul {:class "list-inline"}
+       [:li {:display "inline"} [:a {:href "https://github.com/lramo062"} [:img {:class "img-responsive" :width "40px" :height "20px" :src "img/github.svg"}]]]]
       ]]]])
 
-;; (defn middle []
-;;   [:div {:class "container"}
-;;    [:div {:class "col-lg-4 col-lg-offset-4"}
-;;     [:img {:src "img/giphy.gif"}]
-;;     ]])
+(defn middle []
+  [:div {:class "container"}
+   [:div {:class "col-lg-12"}
+   [:div {:class "col-lg-12 text-center"}
+    [:img {:src "img/giphy.gif"}]
+    ]]])
 
 
 (defn about [desc1 desc2]
@@ -49,15 +52,15 @@
     [:div {:class "row"}
      [:div {:class "col-lg-12 text-center"}
       [:div {:class "col-lg-4 col-lg-offset-4"}
-       [:p {:align "justify"} desc1 ] 
-       [:p {:align "justify"} desc2 ]]]]]
+       [:font {:size "5"} desc1]
+       [:font {:size "5"} desc2]]]]]
    ])
 
 
 (defn compositoner []
   [:div
    (header "Lester Ramos")
-   ;;(middle)
+  (middle)
    (about desc1 desc2)])
 
 

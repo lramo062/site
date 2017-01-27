@@ -18,9 +18,9 @@ if(typeof ReactDOMServer !== 'undefined'){
 return reagent.dom.server.imported = ReactDOMServer;
 } else {
 if(typeof require !== 'undefined'){
-var or__24790__auto__ = reagent.dom.server.imported = require("react-dom/server");
-if(cljs.core.truth_(or__24790__auto__)){
-return or__24790__auto__;
+var or__25051__auto__ = reagent.dom.server.imported = require("react-dom/server");
+if(cljs.core.truth_(or__25051__auto__)){
+return or__25051__auto__;
 } else {
 throw (new Error("require('react-dom/server') failed"));
 }
@@ -37,11 +37,11 @@ throw (new Error("js/ReactDOMServer is missing"));
 reagent.dom.server.render_to_string = (function reagent$dom$server$render_to_string(component){
 reagent.ratom.flush_BANG_.call(null);
 
-var _STAR_non_reactive_STAR_27467 = reagent.impl.util._STAR_non_reactive_STAR_;
+var _STAR_non_reactive_STAR_26740 = reagent.impl.util._STAR_non_reactive_STAR_;
 reagent.impl.util._STAR_non_reactive_STAR_ = true;
 
 try{return (reagent.dom.server.module.call(null)["renderToString"])(reagent.impl.template.as_element.call(null,component));
-}finally {reagent.impl.util._STAR_non_reactive_STAR_ = _STAR_non_reactive_STAR_27467;
+}finally {reagent.impl.util._STAR_non_reactive_STAR_ = _STAR_non_reactive_STAR_26740;
 }});
 /**
  * Turns a component into an HTML string, without data-react-id attributes, etc.
@@ -49,11 +49,11 @@ try{return (reagent.dom.server.module.call(null)["renderToString"])(reagent.impl
 reagent.dom.server.render_to_static_markup = (function reagent$dom$server$render_to_static_markup(component){
 reagent.ratom.flush_BANG_.call(null);
 
-var _STAR_non_reactive_STAR_27469 = reagent.impl.util._STAR_non_reactive_STAR_;
+var _STAR_non_reactive_STAR_26742 = reagent.impl.util._STAR_non_reactive_STAR_;
 reagent.impl.util._STAR_non_reactive_STAR_ = true;
 
 try{return (reagent.dom.server.module.call(null)["renderToStaticMarkup"])(reagent.impl.template.as_element.call(null,component));
-}finally {reagent.impl.util._STAR_non_reactive_STAR_ = _STAR_non_reactive_STAR_27469;
+}finally {reagent.impl.util._STAR_non_reactive_STAR_ = _STAR_non_reactive_STAR_26742;
 }});
 
-//# sourceMappingURL=server.js.map?rel=1484878714094
+//# sourceMappingURL=server.js.map?rel=1485503010270
