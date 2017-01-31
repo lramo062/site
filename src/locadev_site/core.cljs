@@ -11,7 +11,7 @@
 
 (def desc1 "Currently a Computer Science Major/Mathematical Science Minor at FIU. As of today, I develop software for CruiseThinkLabs primarily working with NodeJS. I will be interning at Target in Minneapolis this summer as a Software Engineer.")
 
-(def desc2 " I love writting software in Java, Clojure, C, JS, and F#. I'm also very passionate about my Emacs/Linux Development Enviorment. During my free time I play basketball, workout, or participate in Hackathons all around Florida!")
+(def desc2 " I love writting software in Java, Clojure, C, JS, and F#. I'm also very passionate about my Emacs/Linux Development Environment. During my free time I play basketball, workout, or participate in Hackathons all around Florida!")
 
 
 
